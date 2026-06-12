@@ -1,0 +1,58 @@
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", arial;
+}
+
+/*le añade estilo a la cabecera*/
+        .card-header{
+             background-color: #2E6F7A;
+             color: #343A40;
+        }
+/*Me parecio que el espacio en blanco para la foto era demasiado simplón,
+        asi que lo converti en una casilla */
+        .espacio-comprobante {
+            width: 100px;
+            height: 60px;
+            background-color: #e9ecef;
+            border: 2px dashed #dee2e6;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #343A40;
+            font-size: 0.75rem;
+        }
+        /* esto ejecuta la animación de la etiqueta al presionarse
+        alguno de los dos botones. */
+        .badge {
+            transition: all 0.3s ease;
+        }
+/*esta parte alinea la tabla con el centro, display ejecuta flexbox,
+justify-content lo alinea de forma horizontal, align-items de vertical
+y height modifica la altura.*/
+        .cuerpotabla{
+            display: flex;
+            justify-content: center;
+         align-items: center;
+            height: 80vh;
+        }
+
+        .table-responsive {
+            background-color: #2E6F7A;
+            color: #343A40;
+        }
+
+        .btn-success{
+             background-color: #2E6F7A;
+            color: #343A40;
+            border:none;
+        }
+
+        .btn-success:hover{
+            background-color: #2980b9;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }

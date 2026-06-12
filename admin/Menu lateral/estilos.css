@@ -1,0 +1,191 @@
+@import url('https://rsms.me/inter/inter.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", arial;
+}
+body {
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+/*Estilos para el encabezado*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #2E6F7A;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #343A40;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+/*modales*/
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #343A40;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.modal-content {
+ background-color: #F8F9FA;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.modal-title {
+text-align: center;
+position: relative;
+font-size: 20px;
+}
+
+.botonenviarMCT {
+ color: #343A40;
+ background-color: #2E6F7A;
+ height:8vh;
+ width:18vh;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+  transition: all 0.3s ease;
+}
+.botonenviarMCT:hover {
+  background-color: #3270af; /* Fondo más oscuro lo de abajo agrega sombra*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.botonenviarMBA {
+ color: #343A40;
+ background-color: #2E6F7A;
+ height:8vh;
+ width:18vh;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botonenviarMBA:hover {
+  background-color: #3270af; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn:hover {
+  border-left: 5px solid #343A40;
+  background: #327481;
+}
+/*fin de los modales*/
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #343A40;
+  background: #327481;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #F8F9FA;
+  cursor: pointer;
+  font-size: 18px;
+}
+/*Fin de Menù lateral
+Parte extra de codigo por si, se necesita introducir 
+una lista para escoger los tipos de planes y sus estilos:
+parte de html:
+<label for="message-text" class="col-form-label">Tipo de Plan:</label><br>
+            <select class="planes" name="Plan">
+                <option value="">Seleccione un Plan</option>
+                <option value="oro">Oro
+                </option>
+                <option value="plata">Plata</option>
+                <option value="bronce">Bronce</option>
+            </select><br>
+            
+parte de css:
+            select {
+width: 100%;
+max-width: 300px;
+padding: 10px 15px;
+font-size: 16px;
+border: 2px solid #343A40;
+border-radius: 5px;
+appearance: none;
+cursor: pointer;
+transition: .3s ease;
+
+}
+
+select:hover {
+  border-color: #ffd900;
+}
+*/

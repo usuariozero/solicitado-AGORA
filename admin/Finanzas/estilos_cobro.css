@@ -1,0 +1,45 @@
+/* color y centrado del cuerpo */
+        
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", arial;
+}
+
+    body {
+            background-color: #F8F9FA;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-custom {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: none;
+            border-radius: 12px;
+            color: #343A40;
+        }
+        /* cambia los colores y centra el titulo y subtitulo*/
+        .titulo{
+            color: #343A40;
+            text-align:center;
+            font-weight:bold;
+            }
+            .subtitulo{
+                color: #343A40;
+                text-align:center;
+                font-weight: sub;
+            }
+            /*para el color de los botones*/
+        .btn{
+            background-color: #2E6F7A;
+             border: none;
+        }
+/*transición de color al colocar el mouse*/
+        .btn:hover{
+            background-color: #2980b9;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }
